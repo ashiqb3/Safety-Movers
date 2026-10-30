@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Safety Furniture Movers LLC - #1 House & Office Relocation Services</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eff6ff',
+                            100: '#dbeafe',
+                            500: '#3b82f6',
+                            600: '#2563eb',
+                            700: '#1d4ed8',
+                            800: '#1e40af',
+                            900: '#1e3a8a',
+                        },
+                        accent: {
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+    <!-- TOP HEADER BAR -->
+    <div class="bg-brand-900 text-slate-200 text-xs sm:text-sm py-2 px-4 shadow-sm border-b border-brand-800">
+        <div class="max-w-7xl mx-auto flex flex-wrap justify-between items-center gap-2">
+            <div class="flex items-center space-x-4">
+                <a href="tel:+971569597273" class="hover:text-amber-400 transition flex items-center gap-2">
+                    <i class="fa-solid fa-phone text-amber-400"></i>
+                    <span>+971569597273</span>
+                </a>
+                <a href="mailto:sikandaralibravi23@gmail.com" class="hidden sm:flex items-center gap-2 hover:text-amber-400 transition">
+                    <i class="fa-solid fa-envelope text-amber-400"></i>
+                    <span>sikandaralibravi23@gmail.com</span>
+                </a>
+            </div>
+            <div class="flex items-center space-x-3">
+                <span class="hidden md:inline-block text-xs bg-brand-800 px-2.5 py-1 rounded-full text-brand-100">
+                    <i class="fa-solid fa-shield-halved text-emerald-400 mr-1"></i> Insured Shifting
+                </span>
+                <a href="https://wa.me/+971569597273?text=Hi%20I%20need%20moving%20quotation" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white px-3 py-1 rounded-full text-xs font-semibold transition flex items-center gap-1.5 shadow">
+                    <i class="fa-brands fa-whatsapp text-sm"></i> WhatsApp Us
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN NAVIGATION -->
+    <header class="sticky top-0 z-40 bg-white/95 backdrop-blur-md border-b border-slate-200 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                
+                <!-- LOGO -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="bg-brand-600 text-white p-2.5 rounded-xl shadow-md group-hover:bg-brand-700 transition">
+                        <i class="fa-solid fa-truck-fast text-2xl"></i>
+                    </div>
+                    <div>
+                        <span class="text-xl sm:text-2xl font-extrabold text-brand-900 tracking-tight block leading-none">
+                           SAFETY FURNITURE <span class="text-accent-600">MOVERS LLC</span>
+                        </span>
+                        <span class="text-[10px] font-bold uppercase tracking-wider text-slate-500 block">Movers & Packers</span>
+                    </div>
+                </a>
+
+                <!-- DESKTOP NAV -->
+                <nav class="hidden md:flex items-center space-x-8 font-medium text-slate-700 text-sm">
+                    <a href="#home" class="hover:text-brand-600 transition text-brand-600 font-semibold">Home</a>
+                    <a href="#services" class="hover:text-brand-600 transition">Services</a>
+                    <a href="#process" class="hover:text-brand-600 transition">How It Works</a>
+                    <a href="#areas" class="hover:text-brand-600 transition">Coverage Areas</a>
+                    <a href="#reviews" class="hover:text-brand-600 transition">Reviews</a>
+                </nav>
+
+                <!-- CTA BUTTON -->
+                <div class="hidden md:flex items-center">
+                    <a href="#quote-form" class="bg-accent-500 hover:bg-accent-600 text-white px-5 py-2.5 rounded-xl font-bold text-sm shadow-md hover:shadow-lg transition transform hover:-translate-y-0.5 flex items-center gap-2">
+                        <i class="fa-solid fa-calculator"></i> Get Free Quote
+                    </a>
+                </div>
+
+                <!-- MOBILE MENU TOGGLE -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700 text-2xl focus:outline-none p-2">
+                    <i class="fa-solid fa-bars" id="menu-icon"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- MOBILE MENU DRAWER -->
+        <div id="mobile-menu" class="hidden md:hidden border-t border-slate-200 bg-white px-4 pt-3 pb-6 space-y-3 shadow-xl">
+            <a href="#home" class="mobile-nav-link block px-3 py-2 rounded-md font-semibold text-brand-600 bg-brand-50">Home</a>
+            <a href="#services" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Services</a>
+            <a href="#process" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">How It Works</a>
+            <a href="#areas" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Coverage Areas</a>
+            <a href="#reviews" class="mobile-nav-link block px-3 py-2 rounded-md font-medium text-slate-700 hover:bg-slate-100">Reviews</a>
+            <a href="#quote-form" class="mobile-nav-link block w-full text-center bg-accent-500 text-white font-bold py-3 rounded-xl shadow mt-4">Get Instant Quote</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION WITH QUICK QUOTE FORM -->
+    <section id="home" class="relative bg-gradient-to-br from-brand-900 via-brand-800 to-slate-900 text-white py-12 lg:py-20 overflow-hidden">
+        <!-- Background Pattern -->
+        <div class="absolute inset-0 opacity-10 bg-[radial-gradient(#fff_1px,transparent_1px)] [background-size:16px_16px]"></div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- HERO LEFT TEXT -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <span class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-500/30 border border-brand-400/30 text-amber-300 text-xs sm:text-sm font-semibold backdrop-blur-md">
+                        <i class="fa-solid fa-star text-amber-400"></i> Rated #1 Relocation Company in UAE
+                    </span>
+                    <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-tight leading-tight">
+                        Safe, Stress-Free <br class="hidden sm:inline">
+                        <span class="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 to-yellow-200">Movers & Packers</span> Services
+                    </h1>
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-normal leading-relaxed">
+                        Top-rated residential, commercial, and villa shifting experts in Dubai, Abu Dhabi, United Arab Emirates, and All Our UAE Service Available. 100% damage-free guarantee with premium packing material.
+                    </p>
+                    
+                    <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-xs sm:text-sm text-slate-200">
+                        <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg border border-white/10">
+                            <i class="fa-solid fa-check-circle text-emerald-400 text-lg"></i>
+                            <span>Professional Dismantling & Assembly</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg border border-white/10">
+                            <i class="fa-solid fa-check-circle text-emerald-400 text-lg"></i>
+                            <span>Bubble Wrap & Wooden Crate</span>
+                        </div>
+                        <div class="flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-lg border border-white/10">
+                            <i class="fa-solid fa-check-circle text-emerald-400 text-lg"></i>
+                            <span>Closed Container Fleets</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- HERO RIGHT QUICK QUOTE FORM -->
+                <div id="quote-form" class="lg:col-span-5">
+                  <div class="bg-white rounded-2xl shadow-2xl p-6 sm:p-8 text-slate-800 border border-slate-100 relative">
+                    <div class="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-accent-500 text-white text-xs font-bold uppercase tracking-wider px-4 py-1 rounded-full shadow-md">
+                      
+                    </div>
+
+                    <h3 class="text-2xl font-bold text-brand-900 mb-1 text-center">Request a Free Quote</h3>
+                    <p class="text-slate-500 text-xs text-center mb-6">Get an estimate within 15 minutes from our team</p>
+
+                    <form id="hero-quote-form" class="space-y-4">
+                      <!-- Name -->
+                      <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Name</label>
+                        <div class="relative">
+                          <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400"><i class="fa-solid fa-user text-sm"></i></span>
+                          <input type="text" id="customerName" required placeholder="e.g. Sikander Ali" class="w-full pl-10 pr-3 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+                      </div>
+
+                      <!-- Phone / WhatsApp Number -->
+                      <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Phone / WhatsApp Number</label>
+                        <div class="relative">
+                          <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400"><i class="fa-solid fa-phone text-sm"></i></span>
+                          <input type="tel" id="customerPhone" required placeholder="+971 XX XXX XXXX" class="w-full pl-10 pr-3 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+                      </div>
+
+                      <!-- Description / Additional Details -->
+                      <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Description / Requirements</label>
+                        <div class="relative">
+                          <textarea id="customerDescription" rows="2" placeholder="e.g. Items detail, villa/apartment, floor number..." class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm"></textarea>
+                        </div>
+                      </div>
+
+                      <!-- Moving From & Moving To Grid -->
+                      <div class="grid grid-cols-2 gap-3">
+                        <!-- Moving From -->
+                        <div>
+                          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Moving From</label>
+                          <select id="movingFrom" class="w-full py-2.5 px-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm bg-white" onchange="toggleOtherInput('movingFrom', 'movingFromOther')">
+                            <option value="">Select Pickup Location</option>
+                            <option>Saadiyat Island</option>
+                            <option>Hydra Village</option>
+                            <option>Al Reem Island</option>
+                            <option>Abu Bakr</option>
+                            <option>Khalifa city</option>
+                            <option>Baniyas</option>
+                            <option>Burj Khalifa</option>
+                            <option>Shamkha</option>
+                            <option>Mussafah</option>
+                            <option>MBZ City</option>
+                            <option>Mohammed Bin Zayed City</option>
+                            <option>Shakhbout City</option>
+                            <option>Al Wathba</option>
+                            <option>Al Shawamekh</option>
+                            <option>Al Falah</option>
+                            <option>Al Reef</option>
+                            <option>Al Raha</option>
+                            <option>Khalifa City A</option>
+                            <option>Khalifa city B</option>
+                            <option>Al Shamkha South</option>
+                            <option>Yas Island</option>
+                            <option>Saadiyat Island</option>
+                            <option>Al Bahia</option>
+                            <option>Al Shahma</option>
+                            <option>Al Mafraq</option>
+                            <option>Al Ain</option>
+                            <option>Dubai</option>
+                            <option>Sharjah</option>
+                            <option>Al Jazira</option>
+                            <option>Ajman</option>
+                            <option>Al Noya (Noya)</option>
+                            <option>Abu Dhabi City</option>
+                            <option>Downtown Dubai</option>
+                            <option>Dubai Marina</option>
+                            <option>Deira</option>
+                            <option>Bur Dubai</option>
+                            <option>Business Bay</option>
+                            <option>Jumeirah</option>
+                            <option>Palm Jumeirah</option>
+                            <option>Al Barsha</option>
+                            <option>JLT (Jumeirah Lakes Towers)</option>
+                            <option>Dubai Silicon Oasis (DSO)</option>
+                            <option>International City</option>
+                            <option>Jebel Ali</option>
+                            <option value="Other">Other</option>
+                          </select>
+                          <input type="text" id="movingFromOther" placeholder="Enter Location / Area Name" class="hidden mt-2 w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+
+                        <!-- Moving To -->
+                        <div>
+                          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Moving To</label>
+                          <select id="movingTo" class="w-full py-2.5 px-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm bg-white" onchange="toggleOtherInput('movingTo', 'movingToOther')">
+                            <option value="">Select Destination</option>     
+                            <option>Saadiyat Island</option>
+                            <option>Hydra Village</option>
+                            <option>Al Reem Island</option>
+                            <option>Abu Bakr</option>
+                            <option>Khalifa city</option>
+                            <option>Baniyas</option>
+                            <option>Burj Khalifa</option>
+                            <option>Shamkha</option>
+                            <option>Mussafah</option>
+                            <option>MBZ City</option>
+                            <option>Mohammed Bin Zayed City</option>
+                            <option>Shakhbout City</option>
+                            <option>Al Wathba</option>
+                            <option>Al Shawamekh</option>
+                            <option>Al Falah</option>
+                            <option>Al Reef</option>
+                            <option>Al Raha</option>
+                            <option>Khalifa City A</option>
+                            <option>Khalifa city B</option>
+                            <option>Al Shamkha South</option>
+                            <option>Yas Island</option>
+                            <option>Saadiyat Island</option>
+                            <option>Al Bahia</option>
+                            <option>Al Shahma</option>
+                            <option>Al Mafraq</option>
+                            <option>Al Ain</option>
+                            <option>Dubai</option>
+                            <option>Sharjah</option>
+                            <option>Al Jazira</option>
+                            <option>Ajman</option>
+                            <option>Al Noya (Noya)</option>
+                            <option>Abu Dhabi City</option>
+                            <option>Downtown Dubai</option>
+                            <option>Dubai Marina</option>
+                            <option>Deira</option>
+                            <option>Bur Dubai</option>
+                            <option>Business Bay</option>
+                            <option>Jumeirah</option>
+                            <option>Palm Jumeirah</option>
+                            <option>Al Barsha</option>
+                            <option>JLT (Jumeirah Lakes Towers)</option>
+                            <option>Dubai Silicon Oasis (DSO)</option>
+                            <option>International City</option>
+                            <option>Jebel Ali</option>
+                            <option value="Other">Other</option>
+                          </select>
+                          <input type="text" id="movingToOther" placeholder="Enter Destination Area" class="hidden mt-2 w-full px-3 py-2 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+                      </div>
+
+                      <!-- Service Type & Moving Date -->
+                      <div class="grid grid-cols-2 gap-3">
+                        <div>
+                          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Service Type</label>
+                          <select id="serviceType" class="w-full py-2.5 px-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm bg-white">
+                            <option value="">Select Service</option>
+                            <option>House Moving</option>
+                            <option>Villa Moving</option>
+                            <option>Office Shifting</option>
+                            <option>Furniture Moving</option>
+                            <option>Packing & Unpacking</option>
+                            <option>Furniture Assembly & Disassembly</option>
+                        </select>
+                        </div>
+
+                        <div>
+                          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Moving Date</label>
+                          <input type="date" id="movingDate" class="w-full py-2 px-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm">
+                        </div>
+                      </div>
+
+                      <button type="submit" class="w-full bg-brand-600 hover:bg-brand-700 text-white font-bold py-3.5 rounded-xl shadow-lg hover:shadow-xl transition flex items-center justify-center gap-2 text-base mt-2">
+                        <i class="fa-solid fa-paper-plane"></i> Submit Quote Request
+                      </button>
+                    </form>
+
+                    <!-- Confirmation Alert Message -->
+                    <div id="form-success-msg" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs text-center font-medium">
+                      <i class="fa-solid fa-circle-check text-emerald-600 text-lg block mb-1"></i>
+                      Thank you! Your quote request has been received. Please press “Send” in WhatsApp to complete your request.
+                    </div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KEY STATS & TRUST BAR -->
+    <section class="bg-amber-500 text-brand-900 py-8 border-y border-amber-600/30">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                <div class="space-y-1">
+                    <p class="text-3xl sm:text-4xl font-extrabold">5+</p>
+                    <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-950">Years Experience</p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-3xl sm:text-4xl font-extrabold">2000+</p>
+                    <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-950">Successful Moves</p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-3xl sm:text-4xl font-extrabold">100%</p>
+                    <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-950">Damage-Free Rate</p>
+                </div>
+                <div class="space-y-1">
+                    <p class="text-3xl sm:text-4xl font-extrabold">24/7</p>
+                    <p class="text-xs sm:text-sm font-bold uppercase tracking-wider text-brand-950">Customer Support</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <section id="services" class="py-16 lg:py-24 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold uppercase tracking-wider text-xs bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Our Core Expertise</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">Comprehensive Relocation Services</h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">From full house packing to single heavy item transport, we handle all moving requirements across Dubai and UAE with safety assurance.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-house-chimney"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">House Shifting</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Complete home relocation services with dismantling, bubble wrap packing, loading, transport, and setup at your new residence.</p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t pt-4 border-slate-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Full furniture wrapping</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Crockery & delicate items care</li>
+                    </ul>
+                </div>
+
+                <!-- Service 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-building"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Office Moving</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Minimizing business downtime with organized corporate shifting, server rack transport, office desk setup, and confidential files moving.</p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t pt-4 border-slate-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Weekend / After-hours shifting</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> IT equipment safe handling</li>
+                    </ul>
+                </div>
+
+                <!-- Service 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-boxes-packing"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Packing & Unpacking</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">High-quality multi-layer packing using corrugated boxes, stretch film, bubble wraps, and specialized wooden crating for valuables.</p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t pt-4 border-slate-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Premium quality cartons</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Labeling and inventory tracking</li>
+                    </ul>
+                </div>
+
+                <!-- Service 4 (Villa Moving) -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-house-laptop"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Villa Moving</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Specialized large-scale villa shifting services with dedicated supervisors, heavy transport fleets, and multi-room coordination.</p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t pt-4 border-slate-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Large fleet trucks available</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Complete outdoor & indoor setup</li>
+                    </ul>
+                </div>
+
+                <!-- Service 5 (Furniture Moving) -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-couch"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Furniture Moving</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Safe transport of individual or bulk furniture items like beds, sofas, wardrobes, and dining sets with specialized secure handling.</p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t pt-4 border-slate-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Scratch-proof protective blankets</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Single or multi-item transport</li>
+                    </ul>
+                </div>
+
+                <!-- Service 6 (Furniture Assembly & Disassembly) -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm hover:shadow-xl transition-all duration-300 border border-slate-200/80 group flex flex-col justify-between">
+                    <div>
+                        <div class="w-14 h-14 rounded-xl bg-brand-50 text-brand-600 flex items-center justify-center text-2xl font-bold mb-6 group-hover:bg-brand-600 group-hover:text-white transition">
+                            <i class="fa-solid fa-screwdriver-wrench"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-slate-900 mb-2">Furniture Assembly & Disassembly</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed mb-4">Expert carpentry services for professional dismantling and reassembling of complex furniture items without any structural damage.</p>
+                    </div>
+                    <ul class="text-xs text-slate-500 space-y-2 border-t pt-4 border-slate-100">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Professional skilled carpenters</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-emerald-500"></i> Precision fittings & alignment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- STEP BY STEP PROCESS -->
+    <section id="process" class="py-16 lg:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-600 font-bold uppercase tracking-wider text-xs bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Simple 4 Steps</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 mt-3">How Our Shifting Process Works</h2>
+                <p class="text-slate-600 mt-3 text-sm sm:text-base">We make relocation effortless with a systematic, professional workflow.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 relative">
+                <!-- Step 1 -->
+                <div class="text-center relative">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-600 text-white font-extrabold text-2xl flex items-center justify-center mx-auto shadow-lg mb-6">1</div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Request Quote</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Call us or submit the online form with your shifting details & location.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="text-center relative">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-600 text-white font-extrabold text-2xl flex items-center justify-center mx-auto shadow-lg mb-6">2</div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Survey & Packing</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Our team arrives on time with high-grade packing cartons and bubble wraps.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="text-center relative">
+                    <div class="w-16 h-16 rounded-2xl bg-brand-600 text-white font-extrabold text-2xl flex items-center justify-center mx-auto shadow-lg mb-6">3</div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Safe Transit</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Loaded carefully in covered trucks and transported under supervisor care.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="text-center relative">
+                    <div class="w-16 h-16 rounded-2xl bg-amber-500 text-white font-extrabold text-2xl flex items-center justify-center mx-auto shadow-lg mb-6">4</div>
+                    <h3 class="text-lg font-bold text-slate-900 mb-2">Unpacking & Setup</h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">Reassembling beds, tables, and placing items exactly where you want.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- WHY CHOOSE US -->
+    <section class="py-16 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-amber-400 font-bold uppercase tracking-wider text-xs">Why Choose Safety Furniture Movers</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+                        Your Furniture & Goods Are Handled Like Our Own
+                    </h2>
+                    <p class="text-slate-300 text-sm leading-relaxed">
+                        With years of experience in the moving industry across Dubai and UAE, we have built a reputation on reliability, punctuality, and complete peace of mind.
+                    </p>
+
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-800 text-amber-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-users-gear"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base">Trained Uniformed Staff</h4>
+                                <p class="text-xs text-slate-400">Experienced carpenters, packers, and heavy lifters on permanent salary.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-800 text-amber-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-hand-holding-dollar"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base">No Hidden Charges</h4>
+                                <p class="text-xs text-slate-400">Transparent upfront pricing provided before starting the move.</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-brand-800 text-amber-400 flex items-center justify-center font-bold shrink-0">
+                                <i class="fa-solid fa-truck-ramp-box"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-base">All-Weather Covered Trucks</h4>
+                                <p class="text-xs text-slate-400">Rain-proof, dust-free enclosed vehicles for secure transport.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                            <i class="fa-solid fa-box-open text-4xl text-amber-400 mb-3"></i>
+                            <h4 class="font-bold text-xl text-white">10,000+</h4>
+                            <p class="text-xs text-slate-400 mt-1">Boxes Packed & Moved</p>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                            <i class="fa-solid fa-face-smile text-4xl text-amber-400 mb-3"></i>
+                            <h4 class="font-bold text-xl text-white">99.2%</h4>
+                            <p class="text-xs text-slate-400 mt-1">Satisfaction Rate</p>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                            <i class="fa-solid fa-city text-4xl text-amber-400 mb-3"></i>
+                            <h4 class="font-bold text-xl text-white">7+</h4>
+                            <p class="text-xs text-slate-400 mt-1">Abu Dhabi Covered</p>
+                        </div>
+                        <div class="bg-slate-800 p-6 rounded-2xl border border-slate-700 text-center">
+                            <i class="fa-solid fa-clock text-4xl text-amber-400 mb-3"></i>
+                            <h4 class="font-bold text-xl text-white">On-Time</h4>
+                            <p class="text-xs text-slate-400 mt-1">Arrival Guarantee</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COVERAGE AREAS IN DUBAI & UAE -->
+    <section id="areas" class="py-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-600 font-bold uppercase tracking-wider text-xs bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Service Locations</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">Areas We Cover</h2>
+                <p class="text-slate-600 text-sm mt-2">Serving every major neighborhood in Dubai and all key emirates of the UAE.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Dubai Areas -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <h3 class="font-bold text-lg text-brand-900 border-b pb-3 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-location-dot text-amber-500"></i> Abu Dhabi Major Neighborhoods
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs text-slate-700">
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Al Khalidyah</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Al Reem Island</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Saadiyad Island</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Yas Island</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Khalifa City</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Mohammed Bin Zayed (MBZ City)</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Al Raha Beach</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Al Bateen</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Al Mushrif</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Baniyas</span>
+                    </div>
+                </div>
+
+                <!-- UAE Inter-Emirates -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+                    <h3 class="font-bold text-lg text-brand-900 border-b pb-3 mb-4 flex items-center gap-2">
+                        <i class="fa-solid fa-map-location-dot text-amber-500"></i> Inter-Emirates Routes
+                    </h3>
+                    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-xs text-slate-700">
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Abu Dhabi</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Khalifa City</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Mohammed Bin Zayed City (MBZ City)</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Baniyas</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Al Shamkha</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Al Noya </span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Al Jazira</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Saadiyat Island</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Al Reem Island</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Hydra Village</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ AL Raha Beach</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Al Bahia</span>
+                        <span class="bg-slate-100 p-2 rounded-lg font-medium text-center">Abu Dhabi ➔ Al Falah</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CUSTOMER REVIEWS & FEEDBACK SUBMISSION SECTION -->
+    <section id="reviews" class="py-16 bg-white border-t border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-600 font-bold uppercase tracking-wider text-xs bg-brand-50 px-3 py-1 rounded-full border border-brand-100">Testimonials</span>
+                <h2 class="text-3xl font-extrabold text-slate-900 mt-3">What Our Clients Say</h2>
+                <p class="text-slate-600 text-sm mt-2">Real feedback from families and business owners in Dubai.</p>
+            </div>
+
+            <!-- REVIEWS DISPLAY GRID (Purane fake reviews khatam kar diye gaye hain, ab sirf naye user reviews yahan dynamically aayenge) -->
+            <div id="reviews-container" class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+            </div>
+
+            <!-- INTERACTIVE REVIEW / FEEDBACK SUBMISSION FORM -->
+            <div class="max-w-2xl mx-auto bg-slate-50 rounded-2xl p-6 sm:p-8 border border-slate-200 shadow-md">
+                <div class="text-center mb-6">
+                    <h3 class="text-xl font-bold text-slate-900">Leave Your Feedback</h3>
+                    <p class="text-xs text-slate-500 mt-1">Share your experience with Safety Furniture Movers LLC</p>
+                </div>
+
+                <form id="feedback-form" class="space-y-4">
+                    <!-- Rating Input Stars -->
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-2 text-center">Your Rating</label>
+                        <div class="flex justify-center items-center gap-2 text-2xl text-amber-400" id="star-rating-select">
+                            <i class="fa-solid fa-star cursor-pointer hover:scale-110 transition-transform" data-rating="1"></i>
+                            <i class="fa-solid fa-star cursor-pointer hover:scale-110 transition-transform" data-rating="2"></i>
+                            <i class="fa-solid fa-star cursor-pointer hover:scale-110 transition-transform" data-rating="3"></i>
+                            <i class="fa-solid fa-star cursor-pointer hover:scale-110 transition-transform" data-rating="4"></i>
+                            <i class="fa-solid fa-star cursor-pointer hover:scale-110 transition-transform" data-rating="5"></i>
+                        </div>
+                        <input type="hidden" id="selectedRating" value="5">
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <!-- Name Input -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Your Full Name</label>
+                            <input type="text" id="reviewerName" required placeholder="e.g. Rashid Khan" class="w-full px-3 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm bg-white">
+                        </div>
+
+                        <!-- Location / Area -->
+                        <div>
+                            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Location / Area</label>
+                            <input type="text" id="reviewerLocation" required placeholder="e.g. Downtown, Dubai" class="w-full px-3 py-2.5 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm bg-white">
+                        </div>
+                    </div>
+
+                    <!-- Review Text area -->
+                    <div>
+                        <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Your Feedback / Comment</label>
+                        <textarea id="reviewerComment" rows="3" required placeholder="Tell us about our service, packing quality, staff behavior, etc..." class="w-full p-3 rounded-lg border border-slate-300 focus:outline-none focus:ring-2 focus:ring-brand-500 text-sm bg-white"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold py-3 rounded-xl shadow transition flex items-center justify-center gap-2 text-sm">
+                        <i class="fa-solid fa-comment-dots"></i> Submit Feedback
+                    </button>
+                </form>
+
+                <!-- Feedback Success Alert Message -->
+                <div id="feedback-success-msg" class="hidden mt-4 p-4 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs text-center font-medium">
+                    <i class="fa-solid fa-circle-check text-emerald-600 text-lg block mb-1"></i>
+                    Thank you so much! Your feedback has been published successfully.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="bg-gradient-to-r from-brand-800 to-brand-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-6">
+            <h2 class="text-2xl sm:text-4xl font-extrabold">Ready for a Smooth & Hassle-Free Move?</h2>
+            <p class="text-slate-300 text-sm sm:text-base max-w-2xl mx-auto">Contact us today to book a free physical or video survey for your home or office shifting.</p>
+            <div class="flex flex-wrap justify-center gap-4 pt-2">
+                <a href="tel:+971569597273" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-bold px-6 py-3.5 rounded-xl text-sm transition shadow-lg flex items-center gap-2">
+                    <i class="fa-solid fa-phone"></i> Call: +971569597273
+                </a>
+                <a href="https://wa.me/+971569597273" target="_blank" class="bg-emerald-600 hover:bg-emerald-700 text-white font-bold px-6 py-3.5 rounded-xl text-sm transition shadow-lg flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 text-slate-400 text-xs sm:text-sm mt-auto">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">
+                
+                <!-- Col 1: About -->
+                <div class="space-y-4">
+                    <a href="#" class="flex items-center gap-2">
+                        <div class="bg-brand-600 text-white p-2 rounded-lg">
+                            <i class="fa-solid fa-truck-fast text-lg"></i>
+                        </div>
+                        <span class="text-lg font-bold text-white tracking-tight">SAFETY FURNITURE<span class="text-amber-500"> MOVERS LLC</span></span>
+                    </a>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                       Safety Furniture Movers LLC is a premier Packers and Movers company based in Dubai, Abu Dhabi, United Arab Emirates, delivering high-end Home Shifting, Office Moving, Furniture Packing, and Safe Transportation services All Our UAE.
+                    </p>
+                </div>
+
+                <!-- Col 2: Services -->
+                <div>
+                    <h4 class="text-white font-bold text-sm mb-4 border-b border-slate-800 pb-2">Our Services</h4>
+                    <ul class="space-y-2 text-xs">
+                        <li><a href="#services" class="hover:text-amber-400 transition">House Moving</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition">Villa Moving</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition">Office Shifting</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition">Furniture Moving</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition">Packing & Unpacking</a></li>
+                        <li><a href="#services" class="hover:text-amber-400 transition">Furniture Assembly & Disassembly</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Coverage -->
+<div>
+    <h4 class="text-white font-bold text-sm mb-4 border-b border-slate-800 pb-2">Abu Dhabi Service Zones</h4>
+    <ul class="space-y-2 text-xs">
+        <li><a href="#areas" class="hover:text-amber-400 transition">Abu Dhabi City Center Movers</a></li>
+        <li><a href="#areas" class="hover:text-amber-400 transition">Khalifa City & MBZ City</a></li>
+        <li><a href="#areas" class="hover:text-amber-400 transition">Reem, Yas & Saadiyat Island</a></li>
+        <li><a href="#areas" class="hover:text-amber-400 transition">Al Raha Beach & Al Reef</a></li>
+        <li><a href="#areas" class="hover:text-amber-400 transition">Baniyas & Al Shamkha Shifting</a></li>
+        <li><a href="#areas" class="hover:text-amber-400 transition">Al Khalidiyah & Al Bateen</a></li>
+    </ul>
+</div>
+
+                <!-- Col 4: Contact -->
+                <div class="space-y-3 text-xs">
+                    <h4 class="text-white font-bold text-sm mb-4 border-b border-slate-800 pb-2">Head Office</h4>
+                    <p class="flex items-start gap-2">
+                        <i class="fa-solid fa-location-dot text-amber-500 mt-0.5"></i>
+                        <span>Dubai, Abu Dhabi & Sharjah (UAE)</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i class="fa-solid fa-phone text-amber-500"></i>
+                        <span>+971569597273</span>
+                    </p>
+                    <p class="flex items-center gap-2">
+                        <i class="fa-solid fa-envelope text-amber-500"></i>
+                        <span>sikandaralibravi23@gmail.com</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="border-t border-slate-900 pt-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs">
+                <p>&copy; 2026 Safety Furniture Movers LLC. All Rights Reserved.</p>
+                <!-- Clickable Social Media Icons Links -->
+                <div class="flex space-x-4">
+                    <a href="https://www.facebook.com/profile.php?id=61593105374103" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook text-base"></i>
+                    </a>
+                    <a href="https://www.instagram.com/safety_furniture_movers?xtok=MTM4bmJvYnJ3bXNvdw==qwsxaz" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-base"></i>
+                    </a>
+                    <a href="https://wa.me/+971569597273" target="_blank" rel="noopener noreferrer" class="hover:text-white transition" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp text-base"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING WHATSAPP BUTTON -->
+    <a href="https://wa.me/+971569597273?text=Hi%20I%20want%20a%20moving%20quote" target="_blank" class="fixed bottom-6 right-6 z-50 bg-emerald-500 hover:bg-emerald-600 text-white w-14 h-14 rounded-full flex items-center justify-center text-3xl shadow-2xl hover:scale-110 transition transform">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- INTERACTIVE JAVASCRIPT LOGIC -->
+    <script>
+        // 1. Mobile Navigation Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const menuIcon = document.getElementById('menu-icon');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            if (mobileMenu.classList.contains('hidden')) {
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            } else {
+                menuIcon.classList.replace('fa-bars', 'fa-xmark');
+            }
+        });
+
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                menuIcon.classList.replace('fa-xmark', 'fa-bars');
+            });
+        });
+
+        // 2. Toggle Other Input Function for Form
+        function toggleOtherInput(selectId, inputId) {
+            const selectElem = document.getElementById(selectId);
+            const inputElem = document.getElementById(inputId);
+            
+            if (selectElem.value === 'Other') {
+                inputElem.classList.remove('hidden');
+                inputElem.required = true;
+            } else {
+                inputElem.classList.add('hidden');
+                inputElem.required = false;
+                inputElem.value = '';
+            }
+        }
+
+        // 3. Hero Form Submission Handling with WhatsApp Integration
+        const heroForm = document.getElementById('hero-quote-form');
+        const successMsg = document.getElementById('form-success-msg');
+
+        heroForm.addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const name = document.getElementById('customerName').value.trim();
+            const phone = document.getElementById('customerPhone').value.trim();
+            const description = document.getElementById('customerDescription').value.trim();
+            
+            let from = document.getElementById('movingFrom').value;
+            if (from === 'Other') {
+                from = document.getElementById('movingFromOther').value.trim();
+            }
+
+            let to = document.getElementById('movingTo').value;
+            if (to === 'Other') {
+                to = document.getElementById('movingToOther').value.trim();
+            }
+
+            const service = document.getElementById('serviceType').value;
+            const date = document.getElementById('movingDate').value;
+
+            if (!name || !phone || !from || !to || !service) {
+                alert('Please fill all required fields.');
+                return;
+            }
+
+            const message = 
+`*New Moving Quote Request*
+
+*Name:* ${name}
+*Phone / WhatsApp:* ${phone}
+*Description:* ${description || 'N/A'}
+*Moving From:* ${from}
+*Moving To:* ${to}
+*Service Type:* ${service}
+*Moving Date:* ${date || 'Not selected'}
+
+Please share the best price and available moving schedule.`;
+
+            const ownerNumber = '971569597273';
+            const whatsappURL = `https://wa.me/${ownerNumber}?text=${encodeURIComponent(message)}`;
+
+            window.open(whatsappURL, '_blank');
+
+            successMsg.classList.remove('hidden');
+            this.reset();
+            
+            document.getElementById('movingFromOther').classList.add('hidden');
+            document.getElementById('movingToOther').classList.add('hidden');
+
+            setTimeout(() => {
+                successMsg.classList.add('hidden');
+            }, 6000);
+        });
+
+        // 4. Interactive Reviews / Feedback Form Logic
+        const starContainer = document.getElementById('star-rating-select');
+        const stars = starContainer.querySelectorAll('i');
+        const ratingInput = document.getElementById('selectedRating');
+        const feedbackForm = document.getElementById('feedback-form');
+        const feedbackSuccessMsg = document.getElementById('feedback-success-msg');
+        const reviewsContainer = document.getElementById('reviews-container');
+
+        let currentSelectedRating = 5;
+
+        // Function to update star visual appearance
+        function updateStars(rating) {
+            stars.forEach((star, index) => {
+                if (index < rating) {
+                    star.className = 'fa-solid fa-star cursor-pointer hover:scale-110 transition-transform text-amber-400';
+                } else {
+                    star.className = 'fa-regular fa-star cursor-pointer hover:scale-110 transition-transform text-slate-300';
+                }
+            });
+        }
+
+        // Attach Click and Hover events for smooth star selection
+        stars.forEach(star => {
+            star.addEventListener('mouseenter', function() {
+                const hoverRating = parseInt(this.getAttribute('data-rating'));
+                updateStars(hoverRating);
+            });
+
+            star.addEventListener('mouseleave', function() {
+                updateStars(currentSelectedRating);
+            });
+
+            star.addEventListener('click', function() {
+                currentSelectedRating = parseInt(this.getAttribute('data-rating'));
+                ratingInput.value = currentSelectedRating;
+                updateStars(currentSelectedRating);
+            });
+        });
+
+        // Initialize default 5 stars state
+        updateStars(5);
+
+        // Handle Feedback Submission
+        feedbackForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const name = document.getElementById('reviewerName').value.trim();
+            const location = document.getElementById('reviewerLocation').value.trim();
+            const comment = document.getElementById('reviewerComment').value.trim();
+            const rating = parseInt(ratingInput.value) || 5;
+
+            if (!name || !location || !comment) {
+                return;
+            }
+
+            // Helper to generate initials for avatar
+            const initials = name.split(' ').map(n => n[0]).join('').substring(0, 2).toUpperCase() || 'U';
+
+            // Generate Star HTML String based on exact selected rating
+            let starsHTML = '';
+            for (let i = 1; i <= 5; i++) {
+                if (i <= rating) {
+                    starsHTML += '<i class="fa-solid fa-star"></i>';
+                } else {
+                    starsHTML += '<i class="fa-regular fa-star text-slate-300"></i>';
+                }
+            }
+
+            // Create new Review Card
+            const newReviewCard = document.createElement('div');
+            newReviewCard.className = 'bg-slate-50 p-6 rounded-2xl border border-slate-200 flex flex-col justify-between hover:shadow-md transition';
+
+            newReviewCard.innerHTML = `
+                <div class="space-y-3">
+                    <div class="flex text-amber-400 gap-1 text-sm">
+                        ${starsHTML}
+                    </div>
+                    <p class="text-slate-700 text-sm italic">"${comment}"</p>
+                </div>
+                <div class="mt-6 pt-4 border-t border-slate-200 flex items-center gap-3">
+                    <div class="w-10 h-10 rounded-full bg-brand-600 text-white font-bold flex items-center justify-center text-sm shadow">${initials}</div>
+                    <div>
+                        <h4 class="font-bold text-sm text-slate-900">${name}</h4>
+                        <p class="text-xs text-slate-500">${location}</p>
+                    </div>
+                </div>
+            `;
+
+            // Insert new review at the beginning of the reviews grid
+            reviewsContainer.prepend(newReviewCard);
+
+            // Show confirmation message
+            feedbackSuccessMsg.classList.remove('hidden');
+
+            // Reset Form Fields
+            feedbackForm.reset();
+            currentSelectedRating = 5;
+            ratingInput.value = 5;
+            updateStars(5);
+
+            // Hide success message after 5 seconds
+            setTimeout(() => {
+                feedbackSuccessMsg.classList.add('hidden');
+            }, 5000);
+        });
+    </script>
+</body>
+</html>
