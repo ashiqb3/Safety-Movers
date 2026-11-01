@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18547885582"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <head>
+  <!-- 1. Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18547885582"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-  gtag('config', 'AW-18547885582');
-</script>
+    gtag('config', 'AW-18547885582');
+  </script>
+
+  <!-- 2. Click Conversion Function (Teesra Code) -->
+  <script>
+  function gtag_report_conversion(url) {
+    var callback = function () {
+      if (typeof(url) != 'undefined') {
+        window.location = url;
+      }
+    };
+    gtag('event', 'conversion', {
+        'send_to': 'AW-18547885582/eqBjCIjst68dEI6MqYxF',
+        'value': 1.0,
+        'currency': 'PKR',
+        'event_callback': callback
+    });
+    return false;
+  }
+  </script>
+</head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Safety Furniture Movers LLC - #1 House & Office Relocation Services</title>
